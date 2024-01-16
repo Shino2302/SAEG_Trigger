@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="SAEG_Trigger.MetodoParaBotones"
+             x:Class="SAEG_Trigger.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="AnchorX" Value="0" />
+                <Style.Triggers>
+                    <Trigger  TargetType="Entry"
+                   Property="IsFocused" 
+                   Value="True">
+                        <Setter Property="BackgroundColor" 
+                                Value="Yellow"/>
+                        <Setter Property="PlaceholderColor"
+                                Value="#FFF"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame>
+            <StackLayout>
+                <Entry Placeholder="Ingresa Tu Nombre: "
+                       Background="Green"/>
+                <Entry Placeholder="Ingresa Tu Apelldo Paterno: "
+                       Background="Green"/>
+                <Entry Placeholder="Ingresa Tu Apelldo Materno: "
+                       Background="Green"/>
+            </StackLayout>
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Frame>
+                    <Label Text="Trigger In A Button"
+                           TextColor="#000"/>
+                </Frame>
+                <Button Text="Haz Click Aquí"
+                        BackgroundColor="DarkViolet"
+                        TextColor="#FFF">
+                    <Button.Triggers>
+                        <EventTrigger Event="Clicked">
+                            <local:MetodoParaBotones />
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+            </StackLayout>
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Frame>
+                    <Label Text="Multi Trigger"
+                           TextColor="#000"/>
+                </Frame>
+                <Entry Placeholder="Ingresa Tú Nombre De Usuario: "
+                       x:Name="UserName"/>
+                
+                <Entry Placeholder="Ingresa Tú Password: "
+                       x:Name="Password"/>
+                
+                <Button Text="Ingresar"
+                        BackgroundColor="DarkKhaki">
+                    <Button.Triggers>
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <BindingCondition Binding="{Binding Source={x:Reference UserName},
+                                                            Path=Text.Length}"
+                                                  Value="3"/>
+                                <BindingCondition Binding="{Binding Source={x:Reference Password},
+                                                            Path=IsFocused}"
+                                                  Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Text" 
+                                    Value="Trigger Activado"/>
+                            <Setter Property="BackgroundColor"
+                                    Value="Blue"/>
+                            <Setter Property="TextColor"
+                                    Value="White"/>
+                            <Setter Property="FontAttributes"
+                                    Value="Bold,Italic"/>
+                        </MultiTrigger>
+                    </Button.Triggers>
+                </Button>
+            </StackLayout>
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Frame>
+                    <Label Text="SwipView Trigger"
+                           TextColor="Black"/>
+                </Frame>
+                <SwipeView>
+                    <SwipeView.LeftItems>
+                        <SwipeItem Text="Angular"
+                                   IconImageSource="https://i.ibb.co/pyt3vdr/Angular-full-color-logo-svg.png"
+                                   BackgroundColor="#DD2340"/>
+                    </SwipeView.LeftItems>
+                    <Grid HeightRequest="60"
+                          WidthRequest="300"
+                          BackgroundColor="LightGray">
+                        <Label Text="Framework"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               FontAttributes="Bold,Italic"
+                               TextColor="Black"/>
+                    </Grid>
+                </SwipeView>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

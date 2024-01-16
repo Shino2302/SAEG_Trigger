@@ -1,0 +1,15 @@
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\bin\Debug\netstandard2.0\SAEG_Trigger.deps.json
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\bin\Debug\netstandard2.0\SAEG_Trigger.dll
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\bin\Debug\netstandard2.0\SAEG_Trigger.pdb
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.csproj.AssemblyReference.cache
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.AssemblyInfoInputs.cache
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.AssemblyInfo.cs
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.csproj.CoreCompileInputs.cache
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.dll
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\refint\SAEG_Trigger.dll
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\SAEG_Trigger.pdb
+C:\Users\cd19\source\repos\SAEG_Trigger\SAEG_Trigger\obj\Debug\netstandard2.0\ref\SAEG_Trigger.dll
